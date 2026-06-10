@@ -15,12 +15,12 @@
 ## 30 秒安装
 
 ```bash
-npx skills add https://github.com/<你的用户名>/logic-audit-skill --skill logic-audit
+npx skills add https://github.com/zhujiaozi/logic-audit-skill --skill logic-audit
 ```
 
 或者直接对 AI Agent 说：
 
-> 帮我把 `https://github.com/<你的用户名>/logic-audit-skill` 克隆到 `~/.claude/skills/logic-audit`
+> 帮我把 `https://github.com/zhujiaozi/logic-audit-skill` 克隆到 `~/.claude/skills/logic-audit`
 
 安装后重启对话，直接说 **"审计一下这段推理"** 即可触发。
 
