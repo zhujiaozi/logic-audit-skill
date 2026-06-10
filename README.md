@@ -167,8 +167,17 @@ npx skills add https://github.com/zhujiaozi/logic-audit-skill --skill logic-audi
     └── evals.json    # 评估用例
 ```
 
+## 评估与扩展
+
+技能附带 `evals/evals.json`，覆盖常见逻辑问题、清洁样例、澄清优先触发与大材料覆盖策略。后续扩展时，建议同步维护：
+
+- 逻辑快速参照表（见 `skill.md` 的形式逻辑附录）
+- 评分标准（pass / fail / excellent）
+- 严重问题召回、误报率、漏报率、修正链清晰度等简单指标
+
+这样可以保证技能在新增能力时仍保持可验证、可回归、可维护。
+
 ---
 
-## License
 
 MIT © 2025
