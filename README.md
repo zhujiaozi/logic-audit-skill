@@ -6,7 +6,7 @@
 
 一个适配 Claude Code / Codex 等 Agent 环境的逻辑审计技能，用于对论证、判断、决策、分析或推理材料进行**系统性深度审查**。
 
-v3.2 在原有“逻辑漏洞检测”的基础上，补强了：
+v3.3 在原有“逻辑漏洞检测”的基础上，补强了：
 
 - 顶部硬规则（不得伪造 / 不得把待验证前提当事实 / 结论强度不得超过证据等级等）
 - 事实核查边界声明
@@ -151,7 +151,7 @@ npx skills add https://github.com/zhujiaozi/logic-audit-skill --skill logic-audi
 
 ## 评估测试
 
-技能附带评估用例（`evals/evals.json`，共 18 条），覆盖：
+技能附带评估用例（`evals/evals.json`，当前共 32 条），覆盖：
 
 - 因果混淆 + 以偏概全 + 非黑即白
 - 基本正确推理
@@ -180,7 +180,7 @@ npx skills add https://github.com/zhujiaozi/logic-audit-skill --skill logic-audi
 
 ## 评估与扩展
 
-技能附带 `evals/evals.json`，覆盖常见逻辑问题、清洁样例、澄清优先触发与大材料覆盖策略。后续扩展时，建议同步维护：
+技能附带 `evals/evals.json`，覆盖常见逻辑问题、清洁样例、澄清优先触发与大材料覆盖策略。v3.3 已扩展到 32 条，包含原有 18 条、新增的前提真实性、步骤完整性、第三变量、基础数值错误、以偏概全、非黑即白、混合谬误、长链埋错和数学推导用例，以及误报控制、严重度校准、触发边界和日常语境降级用例。后续扩展时，建议同步维护：
 
 - 逻辑快速参照表（见 `SKILL.md` 的形式逻辑附录）
 - 评分标准（pass / fail / excellent）
